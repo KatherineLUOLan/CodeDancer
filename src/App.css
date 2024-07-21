@@ -1,0 +1,161 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+.chat-box {
+  width: 95%;
+  margin: 40px auto;
+  border: 1px solid #c3c2c2;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 1000px; /* 根据需要调整高度 */
+  overflow-y: scroll;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  white-space:pre-wrap;
+  }
+  
+  
+
+  .text-left{
+    border:1px solid #e1e1e1;
+    width:30%;
+    float:left;
+    height:300px;
+    margin-left:10px;
+    white-space:pre-wrap;
+    overflow-y: scroll;
+  }
+
+  .text-right{
+    border:1px solid #e1e1e1;
+    width:30%;
+    float:right;
+    height:300px;
+    margin-right:10px;
+    white-space:pre-wrap;
+    overflow-y: scroll;
+  }
+
+  .text-middle{
+    margin:0px 310px 50px 310px;
+    border:1px solid #e1e1e1;
+    width:30%;
+    height:300px;
+    white-space:pre-wrap;
+    overflow-y: scroll;
+  }
+
+  
+  .message.user {
+  background-color: #d1e7dd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: right;
+  }
+  
+  .message.bot {
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+  }
+  
+  .input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+  }
+  
+  .input-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  }
+  
+  .input-box button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+
+  /* Style the placeholder text */
+.input-box input::placeholder {
+  color: grey;
+  }
+
+.messages {
+  height: 400px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+  
+  .message button {
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+
+  .demo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .message button:hover {
+  background-color: #0056b3;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
